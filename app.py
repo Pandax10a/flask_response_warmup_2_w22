@@ -38,8 +38,8 @@ def show_all_pokemon():
 
 if(d.production_mode == True):
     print("Running in Production Mode")
-    # import bjoern #type:ignore
-    # bjoern.run(app, "0.0.0.0", 5000)
+    import bjoern #type:ignore
+    bjoern.run(app, "0.0.0.0", 5000)
     app.run(debug=True)
 else:
     from flask_cors import CORS
